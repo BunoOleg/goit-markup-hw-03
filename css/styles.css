@@ -9,6 +9,8 @@
   --additional-bg-color: #f5f4fa;
   --focus-button-color: #188ce8;
   --address-color: rgba(255, 255, 255, 0.6);
+
+  --card-set-gap: 30px;
 }
 /* основний колір тексту   color: #757575;  */
 /*другорядний колір тексту color: #212121; */
@@ -20,6 +22,8 @@
 /* додатковий колір фону: #f5f4fa; */
 /*колір фокусу кнопки: #188ce8;*/
 /*колір адресу: rgba(255, 255, 255, 0.6);*/
+
+/*марджин для сітки в портфоліо: 30px*/
 body {
   background: var(--primery-color-bg);
   color: var(--primery-text-color);
@@ -42,7 +46,15 @@ ul {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+  margin: 0;
+}
 .logo {
   text-decoration: none;
   font-family: Raleway;
@@ -185,6 +197,7 @@ ul {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.67;
+  text-align: center;
   color: var(--secondary-text-color);
 }
 /*Наша команда*/
@@ -206,6 +219,7 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
   color: var(--secondary-text-color);
 }
 .section-list .title-text {
@@ -213,6 +227,7 @@ ul {
   margin-bottom: 0;
   font-size: 16px;
   line-height: 1.19px;
+  text-align: center;
 }
 /*Футер*/
 .footer {
@@ -252,6 +267,16 @@ ul {
 }
 
 /*portfolio*/
+.button-list {
+  display: flex;
+  margin-bottom: 34px;
+}
+.button-list .item {
+  margin-right: 8px;
+}
+.button-list .item:last-child {
+  margin-right: 0;
+}
 .button-list .button {
   font-family: inherit;
   font-weight: 500;
@@ -260,6 +285,7 @@ ul {
   color: var(--secondary-text-color);
   background: var(--additional-bg-color);
   cursor: pointer;
+  text-align: center;
 }
 
 .button-list .button:hover,
@@ -274,11 +300,26 @@ ul {
 .img-list .title {
   font-size: 18px;
   line-height: 2;
+  margin: 20px 24px 4px 24px;
   color: var(--secondary-text-color);
 }
 
 .img-list .text {
   font-size: 16px;
   line-height: 1.86;
+  margin-left: 24px;
+  margin-right: 24px;
   color: var(--primery-text-color);
+}
+
+.img-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1* var(--card-set-gap));
+  margin-left: calc(-1* var(--card-set-gap));
+}
+.img-list .item {
+  flex-basis: calc(100% / 3 - var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+  margin-left: var(--card-set-gap);
 }
