@@ -30,14 +30,17 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  outline: 2px solid tomato;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 ul {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .logo {
@@ -51,6 +54,9 @@ ul {
 
 .logo > span {
   color: var(--accent-color);
+}
+.header {
+  border: 1px solid #ececec;
 }
 /*Навігація*/
 .main-nav {
@@ -138,11 +144,17 @@ ul {
   background: var(--focus-button-color);
 }
 /*Переваги*/
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
+.preference {
+  display: flex;
+}
+.preference .item {
+  width: 270px;
+  margin-right: 30px;
+}
+.preference .item:nth-child(4n) {
+  margin-right: 0;
+}
 .preference .preference-title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -157,7 +169,17 @@ ul {
   font-size: 14px;
   line-height: 1.71;
 }
+
 /*Чем мы занимаемся*/
+.work {
+  display: flex;
+}
+.work .item {
+  margin-right: 30px;
+}
+.work .item:nth-child(3n) {
+  margin-right: 0;
+}
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -169,6 +191,15 @@ ul {
 .section-team {
   background: var(--additional-bg-color);
 }
+.section-list {
+  display: flex;
+}
+.section-list .item {
+  margin-right: 30px;
+}
+.section-list .item:nth-child(4n) {
+  margin-right: 0;
+}
 .section-list .title-list {
   margin-top: 0;
   margin-bottom: 10px;
@@ -179,13 +210,15 @@ ul {
 }
 .section-list .title-text {
   margin-top: 0;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.19px;
 }
 /*Футер*/
 .footer {
   background: var(--secondary-color-bg);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-footer {
   font-family: Raleway;
@@ -205,6 +238,11 @@ ul {
   font-size: 14px;
   line-height: 1.17;
   color: var(--white-color);
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+.contacts .item {
+  margin-bottom: 9px;
 }
 .contacts .link {
   text-decoration: none;
