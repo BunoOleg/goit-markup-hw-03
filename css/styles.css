@@ -9,7 +9,6 @@
   --additional-bg-color: #f5f4fa;
   --focus-button-color: #188ce8;
   --address-color: rgba(255, 255, 255, 0.6);
-
   --card-set-gap: 30px;
 }
 /* основний колір тексту   color: #757575;  */
@@ -52,7 +51,7 @@ h3,
 h4,
 h5,
 h6,
-p{
+p {
   margin: 0;
 }
 .logo {
@@ -269,7 +268,8 @@ p{
 /*portfolio*/
 .button-list {
   display: flex;
-  margin-bottom: 34px;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 .button-list .item {
   margin-right: 8px;
@@ -286,6 +286,7 @@ p{
   background: var(--additional-bg-color);
   cursor: pointer;
   text-align: center;
+  padding: 6px 22px;
 }
 
 .button-list .button:hover,
@@ -315,11 +316,11 @@ p{
 .img-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1* var(--card-set-gap));
-  margin-left: calc(-1* var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
 }
 .img-list .item {
-  flex-basis: calc(100% / 3 - var(--card-set-gap);
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
 }
