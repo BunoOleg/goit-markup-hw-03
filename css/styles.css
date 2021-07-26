@@ -46,7 +46,6 @@ ul {
   padding-bottom: 94px;
 }
 
-}
 h1,
 h2,
 h3,
@@ -257,8 +256,6 @@ img {
   line-height: 1.19;
   color: var(--white-color);
   text-decoration: none;
-  
- 
 }
 
 .logo-footer > span {
@@ -272,7 +269,7 @@ img {
   color: var(--white-color);
   margin-top: 20px;
 }
-.contacts{
+.contacts {
   margin-top: 9px;
 }
 .contacts .item {
@@ -348,9 +345,6 @@ img {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
-.card .title{
- margin: 0 0 9px 0 ;
-}
-.card .text{
-margin: 0;
+.card .title {
+  margin: 0 0 9px 0;
 }
