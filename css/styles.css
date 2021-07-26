@@ -72,6 +72,8 @@ img {
   color: var(--accent-color);
 }
 .header {
+  padding-top: 24px;
+  padding-bottom: 24px;
   border: 1px solid #ececec;
 }
 /*Навігація*/
@@ -136,6 +138,7 @@ img {
 }
 .hero-title {
   margin-bottom: 30px;
+  margin-top: 0;
 
   font-weight: 900;
   font-size: 44px;
@@ -254,6 +257,8 @@ img {
   line-height: 1.19;
   color: var(--white-color);
   text-decoration: none;
+  
+ 
 }
 
 .logo-footer > span {
@@ -266,6 +271,9 @@ img {
   line-height: 1.17;
   color: var(--white-color);
   margin-top: 20px;
+}
+.contacts{
+  margin-top: 9px;
 }
 .contacts .item {
   margin-top: 9px;
@@ -339,4 +347,10 @@ img {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+}
+.card .title{
+ margin: 0 0 9px 0 ;
+}
+.card .text{
+margin: 0;
 }
